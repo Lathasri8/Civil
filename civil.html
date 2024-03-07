@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <!-- Bootstrap JS bundle (use this if you don't have it already) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
  <style>
@@ -19,6 +19,8 @@
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
   }
   .underline{
     color: rgb(1, 1, 90);
@@ -136,6 +138,7 @@ sup {
         position: relative;
         width: 600px;
         height: 150px;
+        margin-bottom: 9px;
         border: 1px solid #ccc;
         background: #f7f6f2 none repeat scroll 0 0;
         overflow: visible; /* Allowing overflow */
@@ -267,6 +270,7 @@ sup {
 }
 .size{
   font-size: 25px;
+  padding-top: 20px;
 }
 
 footer{
@@ -310,39 +314,67 @@ footer{
         <i class="fa fa-phone"></i> 8877 250 3157
         <i class="fa fa-envelope" style="padding-left: 1%;" ></i> hod_ce@rguktong.ac.in
   </section>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="logo.jpg" class="rgukt-logo" />
-          </a>
-          <h4>Department of Civil Engineering</h4>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-link active" id="navItem1" href="civil.html">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="font-family: Arial, sans-serif;">
+    <a class="navbar-brand" href="#">
+        <img src="rgukt-img.png" class="rgukt-logo" />
+    </a>
+    <h4><strong>Department of Civil Engineering</strong></h4>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="navItem1" href="civil.html">
                 HOME
                 <span class="sr-only">(current)</span>
-              </a>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  ABOUT US
+            </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>ABOUT US</b>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="About.html">About the Department </a>
-                  <a class="dropdown-item" href="msg.html">Message From The HOD</a>
-                  <a class="dropdown-item" href="vission.html">Vision and Mission</a>
-                  <a class="dropdown-item" href="#">Awards/Achievements</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" href="About.html">About the Department </a>
+                    <a class="dropdown-item" href="msg.html">Message From The HOD</a>
+                    <a class="dropdown-item" href="vission.html">Vision and Mission</a>
+                    <a class="dropdown-item" href="awards&achievements.html">Awards/Achievements</a>
                 </div>
-              </li>
-              <a class="nav-link" href="#" id="navItem3">ACADEMIC</a>
-              <a class="nav-link" href="#" id="navItem4">CONTACT US</a>
-            </div>
-          </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b> ACADEMICS</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item" href="program.html">PROGRAMS </a>
+                    <a class="dropdown-item" href="course.html">COURSES</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b> RESEARCH</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                    <a class="dropdown-item" href="research.html">RESEARCH AREAS</a>
+                    <a class="dropdown-item" href="facilities.html">FACILITIES</a>
+                    <a class="dropdown-item" href="publications.html">PUBLICATIONS</a>
+                    <a class="dropdown-item" href="projects.html">PROJECTS</a>
+                </div>
+            </li>
+           
+            <a class="nav-link contact" href="laboratories.html" id="navItem5"><b>LABORATORIES</b></a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b> PEOPLE</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                    <a class="dropdown-item" href="faculty.html">FACULTY </a>
+                    <a class="dropdown-item" href="research_scholors.html">RESEARCH SCHOLARS</a>
+                    <a class="dropdown-item" href="staff.html">STAFF</a>
+                </div>
+            </li>
+            <a class="nav-link contact" href="contact.html" id="navItem5"><b>CONTACT US</b></a>
         </div>
-      </nav>
-      
+    </div>
+</nav>
     </header>   
      
      
@@ -385,9 +417,9 @@ footer{
       
       <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <div class="newsbox">
-            <h3 style="color:#020a11 ;">LATEST NEWS</h3><i class="fa fa-minus"></i>
+            <h3 class="heading-dec"><span class="underline">LATEST</span>  NEWS</h3>
             <div >
               <div class="panel-header" onclick="togglePanel(this)">
                 <span id="toggleSymbol" class="plus">+</span><div><p class="heading"><b>Congratulations</b></p></div>
@@ -420,12 +452,13 @@ footer{
             </div>
           </div>
         </div>
-        <div class="col-6 newsbox">
+        <div class="col-6 col-lg-6 newsbox">
           <div class="size">
-              <i class="fa fa-calendar size"></i>
-              <span style="font-size: 28px; color:#020a11 ; margin-left: 8px;">EVENTS</span>
+              <i class="fa fa-calendar "></i>
+              <span style="font-size: 28px; color:#020a11 ; margin-left: 5px;">EVENTS</span>
           </div>
-          <div style="font-size: 28px; color:#020a11 ; margin-left: 8px;">
+          
+          <div style="font-size: 28px; color:#020a11 ; margin-left: 5px;">
               <i class="fa fa-minus size"></i> <!-- Increased size -->
           </div>
           <div class="containers event-bg">
@@ -441,13 +474,16 @@ footer{
         <div class="blue-block"></div>
     </div>
       </div></div></div>
+
+
     <div class="container">
       <div class="row">
-        <h3 style="color: #020a11;">RESEARCH HIGHLIGHS</h3><i class="fa fa-minus"></i>
-        <div class="double-line-bottom-theme-colored-2"></div>
+        <h3 class="heading-dec"><span class="underline">RESEARCH </span>  HIGHLIGHS</h3>
+        
+        <div class="col-12"></div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <div class="card p-3 mb-3">
+            <div class="card p-3 mb-5">
               <div class="row">
                 <div class="col-3"><i class="fa fa-thin fa-clipboard clipboard"></i></div>
               <div class="col-9">
@@ -459,7 +495,7 @@ footer{
               </div>
             </div></div>
           <div class="col-12 col-md-6">
-            <div class="card p-3 mb-3">
+            <div class="card p-3 mb-5">
               <div class="row">
                 <div class="col-3"><i class="fa fa-thin fa-clipboard clipboard"></i></div>
               <div class="col-9">
@@ -531,7 +567,7 @@ footer{
 
 
 
-      <div class="container">
+      <div class="container" style="margin-bottom: 20px;">
         <h3 class="heading-dec"><span class="underline">FACULTY </span> ACHIEVEMENTS</h3>
       
         <div class="carousel">
@@ -542,8 +578,8 @@ footer{
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <div class="container">
+              <div class="carousel-item active container-style">
+                  <div class="container ">
                       <div class="row">
                       <div class="col-4"><img src="dileep_sir.jpg" class="rounded-circle img-fluid" alt="Your Image">
                       </div>
@@ -651,6 +687,9 @@ footer{
         </div>
         
       </div>
+
+     <!-- -------------------------------------- footer section------------------------------------------- -->
+
       <section class="footer-container">
         <div class="container1">
           <div class="row">

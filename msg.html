@@ -28,40 +28,7 @@
         padding-bottom: 5px;
         position: relative;
     }
-      .clipboard{
-        font-size: 50px;  }
-      .card {
-      text-align: center;
-      background-color: white;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #e5eaf4;
-      border-radius: 16px;
-    }
-      .card-title {
-      color: #323f4b;
-      font-family: "Roboto";
-      font-size: 22px;
-      font-weight: 500;
-    }
-    .card-description {
-      color: #7b8794;
-      font-family: "Roboto";
-      font-size: 16px;
-    }
-        .blue-block {
-            position: absolute;
-            top: 20%;
-            left: -34px; /* Half of the width of the blue block */
-            width: 75px; /* Adjust size as needed */
-            height: 62px; /* Adjust size as needed */
-            background: #0f335a ;
-            transition: top 1s ease; /* Transition effect */
-        }
-    
-        .containers:hover .blue-block {
-            top: calc(100% - 80px); /* Move slightly below the container */
-        }
+   
       .rgukt-logo {
       width: 80px;
       height: 70px;
@@ -176,30 +143,67 @@
  </section>
 
  <section id="header">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img
-          src="logo.jpg"
-          class="rgukt-logo"
-        />
-      </a><h4>Department of Civil Engineering </h4>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="font-family: Arial, sans-serif;">
+    <a class="navbar-brand" href="#">
+        <img src="rgukt-img.png" class="rgukt-logo" />
+    </a>
+    <h4><strong> Department of Civil Engineering</strong></h4>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-link active" id="navItem1" href="#">
-            HOME
-            <span class="sr-only">(current)</span>
-          </a>
-          <a class="nav-link" href="#" id="navItem2">ABOUT US</a>
-          <a class="nav-link" href="#" id="navItem3">ACADEMIC</a>
-          <a class="nav-link" href="#" id="navItem4">CONTACT US</a>
+            <a class="nav-link active" id="navItem1" href="civil.html">
+                HOME
+                <span class="sr-only">(current)</span>
+            </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>ABOUT US</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" href="About.html">About the Department </a>
+                    <a class="dropdown-item" href="msg.html">Message From The HOD</a>
+                    <a class="dropdown-item" href="vission.html">Vision and Mission</a>
+                    <a class="dropdown-item" href="awards&achievements.html">Awards/Achievements</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b> ACADEMICS</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item" href="program.html">PROGRAMS </a>
+                    <a class="dropdown-item" href="course.html">COURSES</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b> RESEARCH</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                    <a class="dropdown-item" href="research.html">RESEARCH AREAS</a>
+                    <a class="dropdown-item" href="facilities.html">FACILITIES</a>
+                    <a class="dropdown-item" href="publications.html">PUBLICATIONS</a>
+                    <a class="dropdown-item" href="projects.html">PROJECTS</a>
+                </div>
+            </li>
+           
+            <a class="nav-link contact" href="laboratories.html" id="navItem5"><b>LABORATORIES</b></a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b> PEOPLE</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                    <a class="dropdown-item" href="faculty.html">FACULTY </a>
+                    <a class="dropdown-item" href="research_scholors.html">RESEARCH SCHOLARS</a>
+                    <a class="dropdown-item" href="staff.html">STAFF</a>
+                </div>
+            </li>
+            <a class="nav-link contact" href="contact.html" id="navItem5"><b>CONTACT US</b></a>
         </div>
-      </div>
     </div>
-  </nav>
+</nav>
   </section>
 
 
@@ -216,14 +220,14 @@
 <section class="footer-container">
   <div class="container1">
     <div class="row">
-      <div class="content">
+      <div class="content col-6">
         <h6 class="footer-head"><b>Department of Civil Environmental & Engineering</b></h6>
         <ul>
           <li>123455678</li>
           <li>hod_ce@iiitong.ac.in</li>
         </ul>
       </div>
-    <div class="content">
+    <div class="content col-6">
       <h6><b>Quick Links</b></h6>
       <ul>
         <li>
